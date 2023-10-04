@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.inveasy",
+  "appName": "inveasy",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "cordova": {}
+}

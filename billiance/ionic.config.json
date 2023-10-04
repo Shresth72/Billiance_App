@@ -1,0 +1,7 @@
+{
+  "name": "inveasy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
