@@ -12,11 +12,20 @@ import { Protected } from "./components/Protected";
 import Home from "./pages/home-view";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import ViewInvoicePage from "./pages/view-invoices";
+import { useEffect } from "react";
 // import SplashScreen from "./pages/splash-screen";
 
 const queryClient = new QueryClient();
 
 function App() {
+  useEffect(() => {
+    // if (window.cordova && window.screenOrientation) {
+    //   // Lock the screen orientation to landscape
+    //   window.screenOrientation.lock('landscape');
+    // }
+    window.screen.orientation.lock('portrait');
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <Router>

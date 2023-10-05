@@ -5,17 +5,31 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "@/firebase/firebase";
 import vector from "../assets/vector.png";
 
+import { CapacitorConfig } from "@capacitor/cli";
+
+const config: CapacitorConfig = {
+  plugins: {
+    LocalNotifications: {
+      smallIcon: "ic_stat_icon_config_sample",
+      iconColor: "#488AFF",
+      sound: "beep.wav",
+    },
+  },
+};
+
 export default function AuthPage() {
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname.split("/auth/")[1]);
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, async (user) => {
     if (user) {
       navigate("/", {
         replace: true,
       });
     }
+    await config?.plugins?.LocalNotifications?.sound;
   });
+  
   return (
     <main className="flex flex-col text-textDark items-start w-full sm:w-[350px] mx-auto justify-end md:justify-center min-h-[100vh] pb-10 px-10 bg-green sm:bg-white">
       <div className="absolute top-0 z-0 sm:hidden">

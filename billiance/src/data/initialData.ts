@@ -12,6 +12,7 @@ export const initialInvoice: Invoice = {
   tax: "",
   clientAddress: "",
   clientCountry: "India",
+  paid: false,
   invoiceDate: "",
   productLines: [
     {
