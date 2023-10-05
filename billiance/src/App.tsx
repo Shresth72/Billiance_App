@@ -18,13 +18,13 @@ import { useEffect } from "react";
 const queryClient = new QueryClient();
 
 function App() {
-  useEffect(() => {
-    // if (window.cordova && window.screenOrientation) {
-    //   // Lock the screen orientation to landscape
-    //   window.screenOrientation.lock('landscape');
-    // }
-    window.screen.orientation.lock('portrait');
-  }, []);
+  // useEffect(() => {
+  //   // if (window.cordova && window.screenOrientation) {
+  //   //   // Lock the screen orientation to landscape
+  //   //   window.screenOrientation.lock('landscape');
+  //   // }
+  //   window.screen.orientation.lock('portrait');
+  // }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
