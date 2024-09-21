@@ -7,13 +7,13 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD1O5DznKFcWFkeENssrXYKJ0MLhfs4LB0",
-  authDomain: "invoice-app-74c76.firebaseapp.com",
-  projectId: "invoice-app-74c76",
-  storageBucket: "invoice-app-74c76.appspot.com",
-  messagingSenderId: "291546202432",
-  appId: "1:291546202432:web:49cdbfca083332b7aa3aa5",
-  measurementId: "G-0SQDDNSM4W"
+  apiKey: "AIzaSyCSHN_Uw03CpbtAJHM5OLZtCSVO3BS3ztw",
+  authDomain: "billiance.firebaseapp.com",
+  projectId: "billiance",
+  storageBucket: "billiance.appspot.com",
+  messagingSenderId: "433301062135",
+  appId: "1:433301062135:web:f6ce367f9c8c3e7c182ef2",
+  measurementId: "G-2LVYLBNC52"
 };
 
 // Initialize Firebase
