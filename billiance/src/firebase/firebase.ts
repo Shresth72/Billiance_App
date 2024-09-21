@@ -7,16 +7,17 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCC8kZk_sY8xXkmG1FiPWYjStUDhOjB8cY",
-  authDomain: "invoice-app-e5405.firebaseapp.com",
-  projectId: "invoice-app-e5405",
-  storageBucket: "invoice-app-e5405.appspot.com",
-  messagingSenderId: "245513343047",
-  appId: "1:245513343047:web:2fabae4935166345e22162",
-  measurementId: "G-QTB6CEB5EN",
+  apiKey: "AIzaSyD1O5DznKFcWFkeENssrXYKJ0MLhfs4LB0",
+  authDomain: "invoice-app-74c76.firebaseapp.com",
+  projectId: "invoice-app-74c76",
+  storageBucket: "invoice-app-74c76.appspot.com",
+  messagingSenderId: "291546202432",
+  appId: "1:291546202432:web:49cdbfca083332b7aa3aa5",
+  measurementId: "G-0SQDDNSM4W"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+
